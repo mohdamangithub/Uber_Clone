@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { UserDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
-import UberTitle from '../assets/images/uberBlack.png'
+// import UberTitle from '../assets/images/uberBlack.png'
 import axios from 'axios'
 
 const UserLogin = () => {
@@ -40,7 +40,7 @@ const UserLogin = () => {
   return (
     <div className='p-7 h-screen flex flex-col justify-between'>
       <div>
-        <img className='w-16 mb-10' src={UberTitle} alt="" />
+        <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" />
 
         <form onSubmit={(e) => {
           submitHandler(e)
