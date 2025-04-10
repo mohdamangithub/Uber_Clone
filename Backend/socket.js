@@ -14,6 +14,7 @@ function initializeSocket(server) {
 
     io.on('connection', (socket) => {
         // console.log(`Client connected: ${socket.id}`);
+        // console.log(process.env.GOOGLE_MAPS_API);
 
 
         socket.on('join', async (data) => {
@@ -43,7 +44,7 @@ function initializeSocket(server) {
         });
 
         socket.on('disconnect', () => {
-            console.log(`Client disconnected: ${socket.id}`);
+            // console.log(`Client disconnected: ${socket.id}`);
         });
     });
 }
