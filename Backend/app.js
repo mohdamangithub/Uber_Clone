@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.redirect(process.env.FRONTEND_URL);
 });
 
 app.use('/users', userRoutes);
